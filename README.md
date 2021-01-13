@@ -7,7 +7,7 @@
 Massive_grep.sh was used to comb through approximately 250,000 JSON files worth of metadata.
 This resulted in a directory filled with just under 70,000 files with GPS metadata in JSON format.
 
-### scrap.py
+### scrape.py
 Scrap.py was then used to extract as many useful coordinates as possible and store them in a CSV file.
 
 ### parlorTrick.R
