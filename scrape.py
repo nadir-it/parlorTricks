@@ -133,7 +133,7 @@ def getJSONAttributes(name, JSONchunk):
     cDate, cTime = splitDateTime(mediaCreatedDate)
     mDate, mTime = splitDateTime(mediaModifyDate)
     altitude = formatElev(gpsElevation)
-    caught = name + "," + gpsLatitude + "," + gpsLongitude + "," + altitude + "," + cDate + "," + cTime + "," + mDate + "," + mTime + "," + model + ","
+    caught = name + "," + gpsLatitude + "," + gpsLongitude + "," + altitude + "," + cDate + "," + cTime + "," + mDate + "," + mTime + "," + model
     return caught
 
 def getTag(p):
