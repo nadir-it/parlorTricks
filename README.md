@@ -1,4 +1,4 @@
 # parlorTricks
-<img src="https://raw.githubusercontent.com/nadir-it/parlorTricks/main/GPSMetaData.jpeg" width="100%">
+<img src="https://raw.githubusercontent.com/nadir-it/parlorTricks/main/GPSMetaData.jpeg" width="80%">
 
 Converting over 250,000 JSON files to a CSV of GPS data then plotting that data in R.
