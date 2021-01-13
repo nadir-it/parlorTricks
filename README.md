@@ -11,4 +11,5 @@ This resulted in a directory filled with just under 70,000 files with GPS metada
 Scrap.py was then used to extract as many useful coordinates as possible and store them in a CSV file.
 
 ### parlorTrick.R
-ParlorTrick.R processed this data, and isolated United States based coordinates to generate a point map. 
+ParlorTrick.R processed this data, and isolated United States based coordinates to generate a point map.
+This script was made possible on a short notice by tidyverse and ggmap.
