@@ -131,7 +131,7 @@ def getJSONAttributes(name, JSONchunk):
 
 def getTag(p):
     #print(p)
-    filename = os.path.basename(path)
+    filename = os.path.basename(p)
     splitname = os.path.splitext(filename)
     basename = splitname[0]
     splitbase = basename.split('-')
