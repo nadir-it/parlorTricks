@@ -14,4 +14,4 @@ Scrape.py was then used to extract as many useful coordinates as possible and st
 ParlorTrick.R processed this data, and isolated United States based coordinates to generate a point map.
 This script was made possible on a short notice by tidyverse and ggmap.
 
-<img src="https://raw.githubusercontent.com/nadir-it/parlorTricks/main/GPSMetaDataNC.jpg" width="100%">
+
