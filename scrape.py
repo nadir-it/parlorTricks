@@ -5,13 +5,6 @@ import csv
 import re
 import string
 
-#folder with gps tagged JSON files
-directory = './gps_data/'
-
-#with open('data.csv', 'a') as outputfile:
-outputfile = open('data.csv', 'w')
-fileHeader = 'filetag,latitude,longitude,elevation,creation_date,creation_time,modified_date,modified_time,phone_model'
-outputfile.write( fileHeader +'\n')
 
 def formatElev(elev):
     """ Format elevation from metadata """
@@ -146,29 +139,44 @@ def getTag(p):
     #print(tag)
     return tag
 
-count = 0
-print(fileHeader)
-for file in os.listdir(directory):
-#complete path for python
-    #if count > 1000:
-        #break
-    path = directory + file
-    t = getTag(path)
-    json_file = open(path, 'r')
-    buffer = json_file.read()
-    data = json.loads(buffer)
-    
-    #python why you do this to me?
-    passthru = data[0]
-    
-    #finally start actuall getting the json data
-    caught = getJSONAttributes(t,passthru)
+def main():
+    #folder with gps tagged JSON files
+    directory = './gps_data/'
 
-    #print(caught)
-    outputfile.write(caught + '\n')
+    #with open('data.csv', 'a') as outputfile:
+    outputfile = open('data.csv', 'w')
+    fileHeader = 'filetag,latitude,longitude,elevation,creation_date,creation_time,modified_date,modified_time,phone_model'
+    outputfile.write( fileHeader +'\n')
 
-    json_file.close()
-    print(count)
-    count = count + 1
+    count = 0
+    print(fileHeader)
+    for file in os.listdir(directory):
+    #complete path for python
+        #if count > 1000:
+            #break
+        path = directory + file
+        t = getTag(path)
+        json_file = open(path, 'r')
+        buffer = json_file.read()
+        data = json.loads(buffer)
     
-outputfile.close()
+        #python why you do this to me?
+        passthru = data[0]
+    
+        #finally start actuall getting the json data
+        caught = getJSONAttributes(t,passthru)
+
+        #print(caught)
+        outputfile.write(caught + '\n')
+
+        json_file.close()
+        print(count)
+        count = count + 1
+    
+    outputfile.close()
+
+if __name__ == "__main__":
+    main()
+
+
+
