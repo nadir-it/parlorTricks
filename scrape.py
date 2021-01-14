@@ -10,7 +10,7 @@ directory = './gps_data/'
 
 #with open('data.csv', 'a') as outputfile:
 outputfile = open('data.csv', 'w')
-fileHeader = 'filetag,latitude,longitude,elevation,creation_date,creation_time,modified_date,modified_time,phone_model,'
+fileHeader = 'filetag,latitude,longitude,elevation,creation_date,creation_time,modified_date,modified_time,phone_model'
 outputfile.write( fileHeader +'\n')
 
 def formatElev(elev):
