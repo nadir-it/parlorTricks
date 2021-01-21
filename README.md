@@ -12,3 +12,6 @@ Scrape.py was then used to extract as many useful coordinates as possible from t
 
 ### parlorTrick.R
 ParlorTrick.R imported and processed this data, then generated a point map of the United States and surrounding area. R was able to quickly filter out any remaining issues with the data resulting in 59,602 valid GPS coordinates in or near the United States. This script was made possible on a short notice by tidyverse and ggmap with map images provided by Stamen.
+
+## Results
+The end result of this project is so abstract as to effectively be no more than a generic population map of the United States. It does, however, demonstrate the scale of basic problems such as the lack of GPS metadata scrubbing on even a single social media website. In addition it demonstrates rapid application development and prototyping, data format conversions, and processing large file volumes.
